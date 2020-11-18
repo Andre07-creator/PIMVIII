@@ -41,24 +41,15 @@ namespace Camada_Controller.Entites
 
             string QueryPessoa = "INSERT INTO Pessoa(Nome, Cpf, Endereço) VALUES ('" + pessoa.Nome + "' , '" + pessoa.Cpf + "', '"
                 + pessoa.MdlEndereco + "')";
-            //MdlTelefone Addtel = new MdlTelefone();
-
-
-            //OBTER CONEXÃO PARA A TABELA PESSOA
+           
             try
             {
                 conn = obterConexao();
-                //
-                // Criação do objeto comando, que recebe a query que será utilizada na operação e a conexão com o banco.
-                //
+               
                 OleDbCommand cmd = new OleDbCommand(QueryPessoa, conn);
-                //
-                // Executa comando
-                //
+                
                 reader = cmd.ExecuteReader();
-                //
-                //interage com a tabela retornada
-                //
+                
                 while (reader.Read())
                 {
                     return true;
@@ -81,17 +72,11 @@ namespace Camada_Controller.Entites
                 try
                 {
                     conn = obterConexao();
-                    //
-                    // Criação do objeto comando, que recebe a query que será utilizada na operação e a conexão com o banco.
-                    //
+                    
                     OleDbCommand cmd = new OleDbCommand(Querytel, conn);
-                    //
-                    // Executa comando
-                    //
+                   
                     reader = cmd.ExecuteReader();
-                    //
-                    //interage com a tabela retornada
-                    //
+                    
                     while (reader.Read())
                     {
                         return true;
@@ -105,11 +90,7 @@ namespace Camada_Controller.Entites
 
                 finally
                 {
-                    //
-                    // Garante que a conexão será fechada mesmo que ocorra algum erro.
-                    // Não existe problema em fechar uma conexão duas vezes.
-                    // O problema está em abrir uma conexão duas vezes.
-                    //
+                    
                     if (conn != null)
                     {
                         conn.Close();
@@ -120,17 +101,13 @@ namespace Camada_Controller.Entites
         }
         public MdlPessoa Consulta(long Cpf)
         {
-            //MdlPessoa ConsulCpf = new MdlPessoa();
             string QueryConsult = "SELECT * FROM Pessoa WHERE Cpf = '" + Cpf + "'";
             MdlPessoa ConsulCpf = new MdlPessoa();
 
-            /////////////////
-            ///
+           
             try
             {
                 conn = obterConexao();
-                //
-                // Criação do objeto comando, que recebe a query que será utilizada na operação e a conexão
                 DataSet Ds = new DataSet();
                 //
                 OleDbDataAdapter adapter = new OleDbDataAdapter(QueryConsult, conn);
@@ -159,17 +136,11 @@ namespace Camada_Controller.Entites
             try
             {
                 conn = obterConexao();
-                //
-                // Criação do objeto comando, que recebe a query que será utilizada na operação e a conexão com o banco.
-                //
+                
                 OleDbCommand cmd = new OleDbCommand(QueryExcluir, conn);
-                //
-                // Executa comando
-                //
+               
                 reader = cmd.ExecuteReader();
-                //
-                //interage com a tabela retornada
-                //
+                
                 while (reader.Read())
                 {
                     return true;
@@ -199,17 +170,11 @@ namespace Camada_Controller.Entites
             try
             {
                 conn = obterConexao();
-                //
-                // Criação do objeto comando, que recebe a query que será utilizada na operação e a conexão com o banco.
-                //
+                
                 OleDbCommand cmd = new OleDbCommand(QueryAltPessoa, conn);
-                //
-                // Executa comando
-                //
+                
                 reader = cmd.ExecuteReader();
-                //
-                //interage com a tabela retornada
-                //
+                
                 while (reader.Read())
                 {
                     return true;
@@ -237,17 +202,11 @@ namespace Camada_Controller.Entites
                 try
                 {
                     conn = obterConexao();
-                    //
-                    // Criação do objeto comando, que recebe a query que será utilizada na operação e a conexão com o banco.
-                    //
+                    
                     OleDbCommand cmd = new OleDbCommand(QueryAltTelefone, conn);
-                    //
-                    // Executa comando
-                    //
+                   
                     reader = cmd.ExecuteReader();
-                    //
-                    //interage com a tabela retornada
-                    //
+                    
                     while (reader.Read())
                     {
                         return true;
