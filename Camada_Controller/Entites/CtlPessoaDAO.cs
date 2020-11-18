@@ -68,7 +68,6 @@ namespace Camada_Controller.Entites
                 Querytel = "INSERT INTO Telefone(Numero, Ddd, Tipo) VALUES ('" + tel.Numero + "', '"
                     + tel.Ddd + "','" + tel.MdltipoTelefone + "')";
 
-                //OBTER CONEXÃO PARA A TABELA TELEFONE
                 try
                 {
                     conn = obterConexao();

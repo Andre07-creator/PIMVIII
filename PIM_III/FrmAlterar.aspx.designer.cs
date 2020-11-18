@@ -49,15 +49,6 @@ namespace PIM_III {
         protected global::System.Web.UI.WebControls.Button BtnConsultar;
         
         /// <summary>
-        /// Controle form2.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form2;
-        
-        /// <summary>
         /// Controle LblNome.
         /// </summary>
         /// <remarks>
