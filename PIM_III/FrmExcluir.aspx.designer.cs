@@ -85,15 +85,6 @@ namespace PIM_III {
         protected global::System.Web.UI.WebControls.TextBox TxtCpf;
         
         /// <summary>
-        /// Controle LblAdiconarTell.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblAdiconarTell;
-        
-        /// <summary>
         /// Controle LblDDD.
         /// </summary>
         /// <remarks>
@@ -110,15 +101,6 @@ namespace PIM_III {
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TxtDDD;
-        
-        /// <summary>
-        /// Controle LblNumero.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblNumero;
         
         /// <summary>
         /// Controle TxtTelNumero.
@@ -164,15 +146,6 @@ namespace PIM_III {
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBox1;
-        
-        /// <summary>
-        /// Controle Label2.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
         /// Controle TextBox2.

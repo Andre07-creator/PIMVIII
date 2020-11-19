@@ -18,7 +18,7 @@
 <body style="background-color: #F0F0F0">
     <form id="form1" runat="server">
         <div class="col-md-4">
-            <h2>Consultar Dados</h2>
+            <h2 style="background-color: #CCCCFF">Consultar Dados</h2>
         </div>
         <asp:Label ID="LblDigiCpf" runat="server" Text="Digite o Cpf: " style="font-size: large"></asp:Label>
         <asp:TextBox ID="TxtConsultar" runat="server" OnTextChanged="TxtConsultar_TextChanged"></asp:TextBox>
@@ -38,15 +38,13 @@
         <br />
         <asp:Label ID="LblDDD" runat="server" Text="DDD:  "></asp:Label>
         <asp:TextBox ID="TxtDDD" runat="server" Width="65px" style="margin-bottom: 0px"></asp:TextBox>
-        <asp:Label ID="LblNumero" runat="server" Text="Numero:  "></asp:Label>
-        <asp:TextBox ID="TxtTelNumero" runat="server"></asp:TextBox>
+        Número:<asp:TextBox ID="TxtTelNumero" runat="server"></asp:TextBox>
         <asp:Label ID="LblTipo" runat="server" Text="Tipo: "></asp:Label>
         <asp:TextBox ID="TxtTipo" runat="server"></asp:TextBox>
         <br />
         <asp:Label ID="Label1" runat="server" Text="DDD:  "></asp:Label>
         <asp:TextBox ID="TextBox1" runat="server" Width="65px" style="margin-bottom: 0px"></asp:TextBox>
-        <asp:Label ID="Label2" runat="server" Text="Numero:  "></asp:Label>
-        <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+        Número:<asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
         <asp:Label ID="Label3" runat="server" Text="Tipo: "></asp:Label>
         <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
         
@@ -58,7 +56,7 @@
         <p>
             <asp:Label ID="LblLogradouro" runat="server" Text="Logradouro: "></asp:Label>
             <asp:TextBox ID="TxtLogradouro" runat="server"></asp:TextBox>
-            <asp:Label ID="LblEndNumero" runat="server" Text="Numero: "></asp:Label>
+            <asp:Label ID="LblEndNumero" runat="server" Text="Número: "></asp:Label>
             <asp:TextBox ID="TxtEndNumero" runat="server"></asp:TextBox>
             <asp:Label ID="LblCep" runat="server" Text="CEP: "></asp:Label>
             <asp:TextBox ID="TxtCep" runat="server"></asp:TextBox>
